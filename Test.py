@@ -1,6 +1,8 @@
 from XPyDevTools.Functions import Functions
 
+@Functions
 def main():
     print('Test')
-
-main = Functions.run(self=***args,func=main)
+    print('Test')
+    print('Test')
+main.debug()
