@@ -2,7 +2,7 @@ import setuptools as stp
 
 stp.setup(
     name='XPyDevTools'
-    ,version='0.0.1'
+    ,version='0.0.15'
     ,description='Python Dev Tools',
     author='Eyad Hassan'
     ,author_email='supereyad2011@gmail.com',
