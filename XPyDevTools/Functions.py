@@ -46,15 +46,20 @@ class Functions:
                 ffl = ff.readlines()
                 found = False
                 ind = 0
+                i = 0
                 for i in range(len(ffl)):
                     if ffl[i] == '@Functions\n':
                         ind = i
                         found = True
+                        break
                     else:
                         continue
                 d =1
                 x=1
-                fu = f'def {self.funcname}({self.args[0]}):\n'
+                if len(self.args) < 0:
+                    fu = f'def {self.funcname}({self.args[0]}):\n'
+                else:
+                    fu = f'def {self.funcname}():\n'
                 fuend =False
                 for x in range(len(ffl[ind:len(ffl)])):
                     if x == 1 :
@@ -90,6 +95,8 @@ class Functions:
         #    print("There\'s an error while importing.")
 
         
-            
-        
-        
+@Functions 
+def main(name ,nn):
+    print("Hi")
+main.init(__file__)
+main.debug()
